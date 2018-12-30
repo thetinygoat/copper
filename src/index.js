@@ -7,6 +7,8 @@ import { combineReducers, applyMiddleware, createStore, compose } from "redux";
 import { Provider } from "react-redux";
 import thunk from "redux-thunk";
 import reducer from "./store/reducers/root";
+import "normalize.css/normalize.css";
+import "@blueprintjs/core/lib/css/blueprint.css";
 
 const rootReducer = combineReducers({
 	root: reducer
