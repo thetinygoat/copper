@@ -4,6 +4,7 @@ import Navigation from "../../components/Navigation/Navigation";
 import Dashboard from "../../components/Dashboard/Dashboard";
 import ExpenseList from "../../components/ExpenseList/ExpenseList";
 import BudgetStatus from "../../components/BudgetStatus/BudgetStatus";
+import Modal from "../../containers/Modal/Modal";
 
 const Wrapper = styled.section`
 	width: 80%;
@@ -23,6 +24,9 @@ class Layout extends Component {
 					<Dashboard />
 					<ExpenseList />
 					<BudgetStatus />
+					<Modal title="Hello World">
+						<p>hello world</p>
+					</Modal>
 				</Wrapper>
 			</div>
 		);

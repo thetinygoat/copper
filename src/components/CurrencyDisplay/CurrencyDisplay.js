@@ -4,9 +4,9 @@ import { Divider } from "@blueprintjs/core";
 export default function CurrencyDisplay(props) {
 	return (
 		<div>
-			<p style={{ fontSize: "1.3em" }}>{props.type}</p>
+			<p style={{ fontSize: "1em" }}>{props.type}</p>
 			<Divider vertical={true} />
-			<h2 className="bp3-heading">
+			<h3 className="bp3-heading">
 				<span
 					style={{
 						fontSize: ".7em",
@@ -18,7 +18,7 @@ export default function CurrencyDisplay(props) {
 					{props.currency}
 				</span>
 				{props.value}
-			</h2>
+			</h3>
 		</div>
 	);
 }
