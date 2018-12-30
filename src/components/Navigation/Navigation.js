@@ -10,30 +10,20 @@ import {
 	Popover,
 	Position
 } from "@blueprintjs/core";
-
-import DropDown from "./DropDown/DropDown";
+import NavigationItem from "./NavigationItem/NavigationItem";
 
 export default function Navigation() {
 	return (
 		<div>
 			<Navbar style={{ background: Colors.DARK_GRAY2, color: Colors.WHITE }}>
 				<Navbar.Group align={Alignment.LEFT}>
-					<NavbarHeading>COPPER</NavbarHeading>
+					<NavigationItem type="heading" />
 				</Navbar.Group>
 				<Navbar.Group align={Alignment.RIGHT}>
-					<Popover content={<DropDown type="add" />} position={Position.BOTTOM}>
-						<Button icon="plus" minimal={true} />
-					</Popover>
-					<Button minimal={true} style={{ color: Colors.WHITE }} icon="log-in">
-						Login
-					</Button>
-					<Button
-						text="Logout"
-						icon="log-out"
-						minimal={true}
-						style={{ color: Colors.WHITE }}
-					/>
-					<Button intent={Intent.SUCCESS} text="Sign up" />
+					<NavigationItem type="add" />
+					<NavigationItem type="login" />
+					<NavigationItem type="logout" />
+					<NavigationItem type="signup" />
 				</Navbar.Group>
 			</Navbar>
 		</div>
