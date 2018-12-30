@@ -9,7 +9,7 @@ const Wrapper = styled.section`
 export default function BudgetStatus() {
 	return (
 		<Wrapper>
-			<Menu>
+			<Menu style={{ backgroundColor: "transparent" }}>
 				<h2>Dashboard</h2>
 				<MenuDivider />
 				<MenuItem text="Expenses" icon="dollar" />
