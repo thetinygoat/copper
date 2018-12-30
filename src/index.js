@@ -6,10 +6,10 @@ import * as serviceWorker from "./serviceWorker";
 import { combineReducers, applyMiddleware, createStore, compose } from "redux";
 import { Provider } from "react-redux";
 import thunk from "redux-thunk";
-import reducer from "./store/reducers/root";
+import modalReducer from "./store/reducers/modal";
 
 const rootReducer = combineReducers({
-	root: reducer
+	modal: modalReducer
 });
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
