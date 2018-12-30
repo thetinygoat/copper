@@ -3,8 +3,7 @@ import { Menu, MenuItem, MenuDivider } from "@blueprintjs/core";
 import styled from "styled-components";
 
 const Wrapper = styled.section`
-	flex-grow: 0.5;
-	margin-right: 1em;
+	flex-grow: 0;
 `;
 
 export default function BudgetStatus() {

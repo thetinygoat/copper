@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Navigation from "../../components/Navigation/Navigation";
 import Dashboard from "../../components/Dashboard/Dashboard";
 import ExpenseList from "../../components/ExpenseList/ExpenseList";
+import BudgetStatus from "../../components/BudgetStatus/BudgetStatus";
 
 const Wrapper = styled.section`
 	width: 80%;
@@ -21,6 +22,7 @@ class Layout extends Component {
 				<Wrapper>
 					<Dashboard />
 					<ExpenseList />
+					<BudgetStatus />
 				</Wrapper>
 			</div>
 		);
