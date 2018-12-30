@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import Navigation from "../../components/Navigation/Navigation";
-import BudgetStatus from "../../components/BudgetStatus/BudgetStatus";
+import Dashboard from "../../components/Dashboard/Dashboard";
 import ExpenseList from "../../components/ExpenseList/ExpenseList";
 
 const Wrapper = styled.section`
-	width: 70%;
+	width: 80%;
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
@@ -19,7 +19,7 @@ class Layout extends Component {
 			<div>
 				<Navigation />
 				<Wrapper>
-					<BudgetStatus />
+					<Dashboard />
 					<ExpenseList />
 				</Wrapper>
 			</div>
