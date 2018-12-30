@@ -11,7 +11,9 @@ export default function BudgetStatus() {
 	return (
 		<Wrapper>
 			<Card interactive={false} elevation={Elevation.TWO}>
-				<CurrencyDisplay type="Savings" currency="$" value="1000" />
+				<CurrencyDisplay type="Savings" currency="$" value="430" />
+				<CurrencyDisplay type="Income" currency="$" value="10" />
+				<CurrencyDisplay type="Expenses Today" currency="$" value="1000" />
 			</Card>
 		</Wrapper>
 	);
