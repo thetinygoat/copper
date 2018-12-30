@@ -7,7 +7,9 @@ export default function Navitem(props) {
 	case "add":
 		dropDown = (
 			<Menu>
-				<Menu.Item text=" New month" icon="calendar" />
+				<Menu.Item text="Expense" icon="credit-card" />
+				<Menu.Item text="Income" icon="dollar" />
+				<Menu.Item text="Savings" icon="bank-account" />
 			</Menu>
 		);
 	}
