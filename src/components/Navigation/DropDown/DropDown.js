@@ -10,13 +10,17 @@ class DropDown extends Component {
 				<Menu.Item
 					text="Expense"
 					icon="credit-card"
-					onClick={this.props.isOpen}
+					onClick={() => this.props.isOpen("Add Expense", "expense")}
 				/>
-				<Menu.Item text="Income" icon="dollar" onClick={this.props.isOpen} />
+				<Menu.Item
+					text="Income"
+					icon="dollar"
+					onClick={() => this.props.isOpen("Add Income", "income")}
+				/>
 				<Menu.Item
 					text="Savings"
 					icon="bank-account"
-					onClick={this.props.isOpen}
+					onClick={() => this.props.isOpen("Update Savings", "saving")}
 				/>
 			</Menu>
 		);
@@ -25,7 +29,8 @@ class DropDown extends Component {
 
 const mapDispatchToProps = dispatch => {
 	return {
-		isOpen: () => dispatch(modalActions.openModal())
+		isOpen: (modalType, formType) =>
+			dispatch(modalActions.openModal(modalType, formType))
 	};
 };
 
