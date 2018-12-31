@@ -5,7 +5,9 @@ let initialState = {
 	canOutsideClickClose: true,
 	enforceFocus: true,
 	isOpen: false,
-	usePortal: true
+	usePortal: true,
+	title: "",
+	formType: ""
 };
 
 export default (state = initialState, action) => {
@@ -13,7 +15,9 @@ export default (state = initialState, action) => {
 	case actions.OPEN_MODAL:
 		return {
 			...state,
-			isOpen: true
+			isOpen: true,
+			title: action.modalType,
+			formType: action.formType
 		};
 	case actions.CLOSE_MODAL:
 		return {
