@@ -5,7 +5,7 @@ export default function CurrencyDisplay(props) {
 	return (
 		<div>
 			<p style={{ fontSize: "1em" }}>{props.type}</p>
-			<Divider vertical={true} />
+			<Divider vertical />
 			<h3 className="bp3-heading">
 				<span
 					style={{
