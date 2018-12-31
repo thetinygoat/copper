@@ -7,9 +7,11 @@ import { combineReducers, applyMiddleware, createStore, compose } from "redux";
 import { Provider } from "react-redux";
 import thunk from "redux-thunk";
 import modalReducer from "./store/reducers/modal";
+import expenseListReducer from "./store/reducers/expenseList";
 
 const rootReducer = combineReducers({
-	modal: modalReducer
+	modal: modalReducer,
+	expenseList: expenseListReducer
 });
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
