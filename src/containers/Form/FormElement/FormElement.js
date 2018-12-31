@@ -14,6 +14,7 @@ export default function FormElements(props) {
 					id={props.id}
 					placeholder={props.placeholder}
 					type={props.type}
+					leftIcon={props.leftIcon}
 				/>
 			</FormGroup>
 		</div>

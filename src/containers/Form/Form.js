@@ -7,14 +7,16 @@ export default class Form extends Component {
 			label: "Amount",
 			labelInfo: "(required)",
 			id: "expense-amount",
-			placeholder: "Amount"
+			placeholder: "Amount",
+			leftIcon: "dollar"
 		},
 		{
 			type: "text",
 			label: "Spent On",
 			labelInfo: "(required)",
 			id: "expense-spent-on",
-			placeholder: "Spent On"
+			placeholder: "Spent On",
+			leftIcon: "help"
 		}
 	];
 
@@ -24,7 +26,8 @@ export default class Form extends Component {
 			label: "Amount",
 			labelInfo: "(required)",
 			id: "saving-amount",
-			placeholder: "Amount"
+			placeholder: "Amount",
+			leftIcon: "dollar"
 		}
 	];
 
@@ -34,7 +37,8 @@ export default class Form extends Component {
 			label: "Amount",
 			labelInfo: "(required)",
 			id: "income-amount",
-			placeholder: "Amount"
+			placeholder: "Amount",
+			leftIcon: "dollar"
 		}
 	];
 
@@ -61,6 +65,7 @@ export default class Form extends Component {
 					labelInfo={control.labelInfo}
 					id={control.id}
 					placeholder={control.placeholder}
+					leftIcon={control.leftIcon}
 				/>
 			);
 		});
