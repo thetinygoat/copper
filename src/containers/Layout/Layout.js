@@ -5,7 +5,6 @@ import Dashboard from "../../components/Dashboard/Dashboard";
 import ExpenseList from "../../components/ExpenseList/ExpenseList";
 import BudgetStatus from "../../components/BudgetStatus/BudgetStatus";
 import Modal from "../../containers/Modal/Modal";
-import Form from "../../containers/Form/Form";
 
 const Wrapper = styled.section`
 	width: 80%;
@@ -25,9 +24,7 @@ class Layout extends Component {
 					<Dashboard />
 					<ExpenseList />
 					<BudgetStatus />
-					<Modal title="Hello World">
-						<Form type="income" />
-					</Modal>
+					<Modal />
 				</Wrapper>
 			</div>
 		);
